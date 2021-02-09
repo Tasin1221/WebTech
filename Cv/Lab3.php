@@ -23,11 +23,24 @@ if ($length == $width) {
 $area = $length*$width;
 echo "$area<br>";
 $perimeter = 2 * ($length+$width);
-echo "$perimeter";
+echo "$perimeter<br>";
 
 
 $name="raju";
-echo strlen($name);
+
+
+if (strlen($name) == strlen("mina") || strlen($name) == strlen("mithu")) {
+	echo "<b>Hello</b><br>";
+}else{
+	echo "You are not recognized";
+}
+$backColor="green"; $fontColor="red"; $imageWidth="80px"; $imageHeight="80px";
+?>
+<img src="AIUB_logo.png" width="300px" height="300px" />
+<h2>American International University -<span style="background-color:yellow;color:cyan">
+Bangladesh</h2>
+</span>
+
 
 
 ?>

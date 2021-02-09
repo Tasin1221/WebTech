@@ -26,6 +26,8 @@ $perimeter = 2 * ($length+$width);
 echo "$perimeter";
 
 
+$name="raju";
+echo strlen($name);
 
 
 ?>

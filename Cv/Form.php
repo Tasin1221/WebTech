@@ -35,8 +35,13 @@
 <form align="center">
 	<span>UserName</span>:<input type="text"><br>
 	<span>Password</span>:<input type="Password"><br>
-	<span>Gender</span>:<input type="radio" name="Gender">Male <input type="radio" name="Gender">Female <br>
-	<span>Hobbies</span>:<input type="checkbox" >Music <input type="checkbox" >Movies <input type="checkbox" >Playing <br>
+	<span>Gender</span>:
+		<input type="radio" name="Gender">Male 
+		<input type="radio" name="Gender">Female <br>
+	<span>Hobbies</span>:
+		<input type="checkbox" >Music 
+		<input type="checkbox" >Movies 
+		<input type="checkbox" >Playing <br>
 	<span>Profession:</span> 
 	<select>
 		<option>Teaching</option>

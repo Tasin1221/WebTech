@@ -43,7 +43,7 @@
 		<input type="checkbox" >Movies 
 		<input type="checkbox" >Playing <br>
 	<span>Profession:</span> 
-	<select>
+	<select name="Profession">
 		<option>Teaching</option>
 		<option>Business</option>
 		<option>Service</option>

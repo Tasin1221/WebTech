@@ -9,6 +9,7 @@
 	echo "UserName: ".$_POST["Uname"]."<br>";
 	echo "Password: ".$_POST["Pass"]."<br>";
 	echo "Gender: ".$_POST["Gender"]."<br>";
+	echo "Profession: ".$_POST["Profession"]."<br>";
 	?>
 
 </body>

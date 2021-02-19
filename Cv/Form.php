@@ -32,12 +32,12 @@
 
 
 <h1 align="center">User Registration</h1>
-<form align="center">
-	<span>UserName</span>:<input type="text"><br>
-	<span>Password</span>:<input type="Password"><br>
+<form align="center" action="Display.php" method="post">
+	<span>UserName</span>:<input type="text" name="Uname"><br>
+	<span>Password</span>:<input type="Password" name="Pass"><br>
 	<span>Gender</span>:
-		<input type="radio" name="Gender">Male 
-		<input type="radio" name="Gender">Female <br>
+		<input type="radio" name="Gender" value="Male"> Male
+		<input type="radio" name="Gender" value="Female"> Female<br>
 	<span>Hobbies</span>:
 		<input type="checkbox" >Music 
 		<input type="checkbox" >Movies 

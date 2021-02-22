@@ -75,13 +75,46 @@
 
 			<tr>
 				<td><span>Phone</span></td>
-				<td>:<input type="tel" id="Phone"></td>
+				<td>:<input type="tel" id="Phone" placeholder="Phone Number"></td>
 			</tr>
+
 			<tr>
-				<td>
-					<input type="submit" value="SUBMIT">
+				<td><span>Gender</span></td>
+				<td>:<input type="radio" name="Gender" >Male
+					<input type="radio" name="Gender">Female <br> <br> <br>
 				</td>
 			</tr>
+
+			<tr>
+				<td><span>Where did you hear about us?</span></td>
+				<td><input type="checkbox"> Google <br>
+					<input type="checkbox" > Blog Post <br>
+					<input type="checkbox" > News Article <br>
+					<input type="checkbox" > A friend or colleague 
+					</td>
+			</tr>
+
+			<tr>
+				<td><span>Bio:</span></td>
+				<td><textarea name="Bio"></textarea></td>
+			</tr>
+
+
+
+
+
+
+
+
+
+			<tr>
+				<td>
+					<input type="submit" value="Register">
+				</td>
+			</tr>
+
+
+
 		</table>
 		
 	</form>

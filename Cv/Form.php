@@ -1,55 +1,83 @@
+<?php
+		$Uname ="";
+		$err_Uname="";
+
+		$pass = "";
+		$err_pass = "";
+
+	if ($_SERVER["REQUEST_METHOD"] == "POST") {
+		if(empty($_POST["uname"])) {
+			$err_Uname = "Username required";
+		}
+		else{
+
+		}
+		if (empty($_POST["pass"])) {
+			$err_pass = "Password required";
+			
+		}else{
+
+		}
+
+
+
+	echo "Name: ".$_POST["name"]."<br>";
+	echo "Username: ".$_POST["uname"]."<br>";
+	echo "Password: ".$_POST["pass"]."<br>";
+	echo "Confirm Password: ".$_POST["cpass"]."<br>";
+	}
+	?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
 	<title></title>
 </head>
 <body>
-<!--	<table border="5" align="center">
-		<tr>
-			<td><b>ID</b></td>
-			<td><b>NAME</b></td>
-			<td><b>GPA</b></td>
-		</tr>
-		<tr>
-			<td rowspan="2">1</td>
-			<td>Rahim</td>
-			<td>3.76</td>
-		</tr>
-		<tr>
-			
-			<td>Karim</td>
-			<td>3.45</td>
-		</tr>
-		<tr>
-			<td>3</td>
-			<td>Maruf</td>
-			<td>3.12</td>
-		</tr>
+
+
+	
+	<h1>Club Member Registration</h1>
+	<form action="" method="POST">
+		<table>
+
+			<tr>
+				<td><span>Name</span></td>
+				<td>:<input type="text" name="name"></td>
+			</tr>
+
+			<tr>
+				<td><span>Username</span></td>
+				<td>:<input type="text" name="uname" ><br>
+					<span><?php echo "$err_Uname";?></span>
+				</td>
+			</tr>
+
+			<tr>
+				<td><span>Password</span></td>
+				<td>:<input type="Password" name="pass"><br>
+					<span><?php echo "$err_pass";?></span>
+				</td>
+			</tr>
+
+			<tr>
+				<td><span>Confirm Password</span></td>
+				<td>:<input type="Password" name="cpass"></td>
+			</tr>
+
+			<tr>
+				<td><span>Email</span></td>
+				<td>:<input type="Email"></td>
+			</tr>
+			<tr>
+				<td>
+					<input type="submit" value="SUBMIT">
+				</td>
+			</tr>
+		</table>
 		
-	</table>
--->
-
-
-
-<h1 align="center">User Registration</h1>
-<form align="center" action="Display.php" method="post">
-	<span>UserName</span>:<input type="text" name="Uname"><br>
-	<span>Password</span>:<input type="Password" name="Pass"><br>
-	<span>Gender</span>:
-		<input type="radio" name="Gender" value="Male"> Male
-		<input type="radio" name="Gender" value="Female"> Female<br>
-	<span>Hobbies</span>:
-		<input type="checkbox" >Music 
-		<input type="checkbox" >Movies 
-		<input type="checkbox" >Playing <br>
-	<span>Profession:</span> 
-	<select name="Profession">
-		<option>Teaching</option>
-		<option>Business</option>
-		<option>Service</option>
-	</select><br>
-	<input type="submit" value ="submit">
-</form>
+	</form>
 
 </body>
 </html>

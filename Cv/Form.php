@@ -1,24 +1,33 @@
 <?php
 		$Uname ="";
 		$err_Uname="";
-
-		$pass = "";
+		$pass= "";
 		$err_pass = "";
+		$Phone = "";
+		$err_Phone = "";
+
 
 	if ($_SERVER["REQUEST_METHOD"] == "POST") {
-		if(empty($_POST["uname"])) {
-			$err_Uname = "Username required";
+		if(empty($_POST["uname"]) || strlen($_POST["uname"]) <= 6) {
+			$err_Uname = "Username must contain at least 6 characters";
 		}
 		else{
 			$Uname = $_POST["uname"] ;
 
 		}
+
 		if (empty($_POST["pass"])) {
 			$err_pass = "Password required";
 			
 		}else{
 
 
+		}if (is_numeric($_POST["Phone"])) {
+			$Phone = $_POST["Phone"];
+			//$err_Phone = "Phone Number must be contained Numeric value" ;
+		}else{
+			$err_Phone = "Phone Number must be contained Numeric value" ;
+			//$Phone = $_POST["Phone"];
 		}
 
 
@@ -70,12 +79,12 @@
 
 			<tr>
 				<td><span>Email</span></td>
-				<td>:<input type="Email"></td>
+				<td>:<input type="Email" placeholder="Enter Your E-mail"></td>
 			</tr>
 
 			<tr>
 				<td><span>Phone</span></td>
-				<td>:<input type="tel" id="Phone" placeholder="Phone Number"></td>
+				<td>:<input type="string" placeholder="Phone Number" name="Phone" value="<?php echo "$Phone" ;?>"></td>
 			</tr>
 
 			<tr>

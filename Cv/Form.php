@@ -10,12 +10,14 @@
 			$err_Uname = "Username required";
 		}
 		else{
+			$Uname = $_POST["uname"] ;
 
 		}
 		if (empty($_POST["pass"])) {
 			$err_pass = "Password required";
 			
 		}else{
+			$err_pass = $_POST["pass"];
 
 		}
 
@@ -44,12 +46,12 @@
 
 			<tr>
 				<td><span>Name</span></td>
-				<td>:<input type="text" name="name"></td>
+				<td>:<input type="text" name="name" placeholder="Name"></td>
 			</tr>
 
 			<tr>
 				<td><span>Username</span></td>
-				<td>:<input type="text" name="uname" ><br>
+				<td>:<input type="text" name="uname" value ="<?php echo "$Uname"; ?>" placeholder="Username"> <br>
 					<span><?php echo "$err_Uname";?></span>
 				</td>
 			</tr>

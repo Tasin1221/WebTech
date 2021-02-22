@@ -17,16 +17,16 @@
 			$err_pass = "Password required";
 			
 		}else{
-			$err_pass = $_POST["pass"];
+
 
 		}
 
 
 
-	echo "Name: ".$_POST["name"]."<br>";
-	echo "Username: ".$_POST["uname"]."<br>";
-	echo "Password: ".$_POST["pass"]."<br>";
-	echo "Confirm Password: ".$_POST["cpass"]."<br>";
+//	echo "Name: ".$_POST["name"]."<br>";
+//	echo "Username: ".$_POST["uname"]."<br>";
+//	echo "Password: ".$_POST["pass"]."<br>";
+//	echo "Confirm Password: ".$_POST["cpass"]."<br>";
 	}
 	?>
 
@@ -58,7 +58,7 @@
 
 			<tr>
 				<td><span>Password</span></td>
-				<td>:<input type="Password" name="pass"><br>
+				<td>:<input type="Password" name="pass" placeholder="Password"><br>
 					<span><?php echo "$err_pass";?></span>
 				</td>
 			</tr>
@@ -71,6 +71,11 @@
 			<tr>
 				<td><span>Email</span></td>
 				<td>:<input type="Email"></td>
+			</tr>
+
+			<tr>
+				<td><span>Phone</span></td>
+				<td>:<input type="tel" id="Phone"></td>
 			</tr>
 			<tr>
 				<td>

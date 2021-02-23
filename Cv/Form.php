@@ -5,16 +5,24 @@
 		$err_pass = "";
 		$Phone = "";
 		$err_Phone = "";
+		$Email ="";
+		$err_Email = "";
+
+
 
 
 	if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+
+
 		if(empty($_POST["uname"]) || strlen($_POST["uname"]) <= 6) {
 			$err_Uname = "Username must contain at least 6 characters";
 		}
 		else{
 			$Uname = $_POST["uname"] ;
-
 		}
+
+
 
 		if (empty($_POST["pass"])) {
 			$err_pass = "Password required";
@@ -22,7 +30,9 @@
 		}else{
 
 
-		}if (is_numeric($_POST["Phone"])) {
+
+
+		}if (empty($_POST["Phone"]) || is_numeric($_POST["Phone"])) {
 			$Phone = $_POST["Phone"];
 			//$err_Phone = "Phone Number must be contained Numeric value" ;
 		}else{
@@ -30,6 +40,10 @@
 			//$Phone = $_POST["Phone"];
 		}
 
+
+		if (condition) {
+			# code...
+		}
 
 
 //	echo "Name: ".$_POST["name"]."<br>";
@@ -79,12 +93,12 @@
 
 			<tr>
 				<td><span>Email</span></td>
-				<td>:<input type="Email" placeholder="Enter Your E-mail"></td>
+				<td>:<input type="text" name="Email" placeholder="Enter Your E-mail"></td>
 			</tr>
 
 			<tr>
 				<td><span>Phone</span></td>
-				<td>:<input type="string" placeholder="Phone Number" name="Phone" value="<?php echo "$Phone" ;?>"></td>
+				<td>:<input type="string" placeholder="Phone Number" name="Phone" value="<?php echo "$err_Phone";?>"></td>
 			</tr>
 
 			<tr>
@@ -101,6 +115,56 @@
 					<input type="checkbox" > News Article <br>
 					<input type="checkbox" > A friend or colleague 
 					</td>
+			</tr>
+
+			<tr>
+				<td><span>Birth Date:</span></td>
+				<td>
+					<select>
+						<option disabled selected> Day </option>
+						<?php 
+							for ($i=1; $i<=31; $i++){
+    													
+  					      ?> <option value="<?php echo $i;?>"><?php echo $i;?> </option><?php
+ 						   }
+						 ?>
+					</select>
+				</td>
+
+				<td>
+					
+					<select size="1" name="month">
+							
+							<option selected value="January">January</option>
+							<option value="February">February</option>
+							<option value="March">March</option>
+							<option value="April">April</option>
+							<option value="May">May</option>
+							<option value="June">June</option>
+							<option value="July">July</option>
+							<option value="August">August</option>
+							<option value="September">September</option>
+							<option value="October">October</option>
+							<option value="November">November</option>
+							<option value="December">December</option>
+
+					</select>
+
+				</td>
+
+				<td>
+					<select>
+						<option disabled selected> Year </option>
+						<?php 
+							for ($i=1950; $i<=2025; $i++){
+    													
+  					      ?> <option value="<?php echo $i;?>"><?php echo $i;?> </option><?php
+ 						   }
+						 ?>
+					</select>
+				</td>
+
+
 			</tr>
 
 			<tr>

@@ -5,13 +5,30 @@
 		$err_pass = "";
 		$Phone = "";
 		$err_Phone = "";
-		$Email ="";
-		$err_Email = "";
+		$name ="";
+		$err_name = "";
+		$email = "";
+		$err_email = "";
 
 
 
 
 	if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+
+
+		if (empty($_POST["Email"])) {
+			$err_email = "Put your Email Address" ;
+		}else{
+			$email = $_POST["Email"];
+		}
+
+
+		if (empty($_POST["name"])) {
+			$err_name = "Name must be fullfilled" ;
+		}else{
+			$name =$_POST["name"] ;
+		}
 
 
 
@@ -21,6 +38,7 @@
 		else{
 			$Uname = $_POST["uname"] ;
 		}
+
 
 
 
@@ -41,10 +59,7 @@
 		}
 
 
-		if (condition) {
-			# code...
-		}
-
+		
 
 //	echo "Name: ".$_POST["name"]."<br>";
 //	echo "Username: ".$_POST["uname"]."<br>";
@@ -69,7 +84,9 @@
 
 			<tr>
 				<td><span>Name</span></td>
-				<td>:<input type="text" name="name" placeholder="Name"></td>
+				<td>:<input type="text" name="name" value="<?php echo "$name" ?>" placeholder="Name"> <br>
+					<span><?php echo "$err_name"; ?></span>
+				</td>
 			</tr>
 
 			<tr>
@@ -93,7 +110,10 @@
 
 			<tr>
 				<td><span>Email</span></td>
-				<td>:<input type="text" name="Email" placeholder="Enter Your E-mail"></td>
+				<td>:<input type="Email" name="Email"  placeholder="Enter Your E-mail">
+
+
+				</td>
 			</tr>
 
 			<tr>

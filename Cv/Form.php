@@ -88,7 +88,7 @@
 
 			<tr>
 				<td><span>Confirm Password</span></td>
-				<td>:<input type="Password" name="cpass"></td>
+				<td>:<input type="Password" name="cpass" placeholder="Confirm Password"></td>
 			</tr>
 
 			<tr>
@@ -99,6 +99,15 @@
 			<tr>
 				<td><span>Phone</span></td>
 				<td>:<input type="string" placeholder="Phone Number" name="Phone" value="<?php echo "$err_Phone";?>"></td>
+			</tr>
+
+			<tr>
+				<td><span>Address</span></td>
+				<td>
+					<input type="text" placeholder="Stree Address"> <br>
+					<input type="text" placeholder="City"> - <input type="text" placeholder="State">
+					<input type="text" placeholder="Postal/Zip Code">
+				</td>
 			</tr>
 
 			<tr>

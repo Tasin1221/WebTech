@@ -18,6 +18,17 @@
 			font-family: consolas;
 
 		}
+		.btn-mine{
+			background-color: rgb(51, 51, 0);
+			width: 360% ;
+		}
+		.btn-mine:hover{
+			background-color: rgb(26,26,0);
+		}
+		.btn-mine:active{
+			background-color: rgb(51, 204, 51);
+		}
+
 	</style>
 </head>
 <body>
@@ -31,10 +42,10 @@
 				</tr>
 				<tr>
 					<td><span class="my-font">Password</span></td>
-					<td><input type="Password" placeholder="Password"></td>
+					<td>:<input type="Password" placeholder="Password"></td>
 				</tr>
 				<tr colspan="2">
-					<td><input type="button" value="Login" class="my-font"></td>
+					<td><input type="button" value="Login" class="my-font btn-mine"></td>
 				</tr>
 			</table>
 		</form>

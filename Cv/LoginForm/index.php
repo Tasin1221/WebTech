@@ -5,6 +5,7 @@
 	<style>
 		body{
 			background-color: rgb(221,221,221);
+			background-image: url(background.jpg) ;
 		}
 		.login-div{
 			border: 1px solid black;
@@ -21,6 +22,9 @@
 		.btn-mine{
 			background-color: rgb(51, 51, 0);
 			width: 360% ;
+			border: none;
+			size: 3px;
+			padding: 5px;
 		}
 		.btn-mine:hover{
 			background-color: rgb(26,26,0);
@@ -37,7 +41,7 @@
 		<form>
 			<table align="center">
 				<tr>
-					<td><span class="my-font">Username</span></td>
+					<td><span class="my-font" style="color: rgb(17, 51, 0);">Username</span></td>
 					<td>:<input type="text" placeholder="Username"></td>
 				</tr>
 				<tr>

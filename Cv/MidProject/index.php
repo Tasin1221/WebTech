@@ -12,9 +12,9 @@
 			</div>
 			<ul>
 				<li class="Home"><a href="#"><b>Home</b></a></li>
-				<li class="about"><a href="#"><b>Blog</b></a></li>
+				<li class="about"><a href="Blog.php"><b>Blog</b></a></li>
 				<li class="LogIn"><a href="LogIn.php"><b>Log in</b></a></li>
-				<li class="Sup"><a href="#"><b>Sign up</b></a></li>
+				<li class="Sup"><a href="SignUp.php"><b>Sign up</b></a></li>
 			</ul>
 		</div>
 	</header>

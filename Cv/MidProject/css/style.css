@@ -41,7 +41,7 @@ ul li a:hover{
 }
 ul li.Home a{
 	background-color: #transparent;
-	color: rgb(1, 4, 111);
+	color: #000;
 }
 ul li.about a{
 	background-color: #transparent;

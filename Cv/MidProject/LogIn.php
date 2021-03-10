@@ -6,8 +6,8 @@
 	<style>
 		body{
 			background-color: rgb(223, 230, 111);
-			
 		}
+		
 		.login-div{
 			border: 1px solid black;
 			margin: auto;

@@ -1,0 +1,57 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: century Gothic;
+}
+header{
+	background-image: url(../2.jpg);
+	height: 100vh;
+	background-size: cover; 
+	background-position: center;
+}
+ul{
+	float: right;
+	list-style-type: none;
+	margin: 25px;
+	font-size: 25px;
+}
+ul li{
+	display: inline-block; 
+	margin: 10px;
+}
+ul li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 5x 20 px;
+	border: 1px solid #transparent;
+	transition: 0.5s ease;
+}
+ul li a:hover{
+	background-color: #fff;
+	color: #000;
+}
+.logo img{
+	float: left;
+	width: 150px;
+	height: auto;
+}
+.main{
+	max-width: 1200px;
+	margin: auto;
+}
+ul li.Home a{
+	background-color: #transparent;
+	color: rgb(1, 4, 111);
+}
+ul li.about a{
+	background-color: #transparent;
+	color: #000;
+}
+ul li.LogIn a{
+	background-color: #transparent;
+	color: #000;
+}
+ul li.Sup a{
+	background-color: #transparent;
+	color: #000;
+}

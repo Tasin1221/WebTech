@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html>
 <head>
 
 	<style>
 		body{
-			background-color: rgb(221,221,221);
+			background-color: rgb(223, 230, 111);
 			
 		}
 		.login-div{
@@ -12,7 +13,7 @@
 			margin: auto;
 			width: 25% ;
 			margin-top: 16% ;
-			background-color: rgb(160,160,160);
+			background-color: rgb(223, 230, 111);
 			background-image: url(background.jpg);
 
 		}
